@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#c7f0fe"
+    android:weightSum="1" android:orientation="vertical">
+    <FrameLayout android:layout_width="match_parent" android:id="@+id/frameLayout1" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_gravity="center" android:layout_height="wrap_content" android:layout_width="match_parent">
+            <ImageView android:src="@drawable/elooilogin_mdpi" android:id="@+id/imageView1" android:layout_gravity="center_horizontal" android:scaleType="center" android:layout_height="139dp" android:layout_width="258dp"></ImageView>
+            <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="13dp" android:layout_width="wrap_content" android:visibility="visible">
+                <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView1" android:layout_height="wrap_content" android:textColor="#054c71" android:text="@string/lb_email" android:layout_marginTop="13dp"></TextView>
+                <EditText android:layout_width="match_parent" android:id="@+id/editText1" android:layout_height="wrap_content">
+                    <requestFocus></requestFocus>
+                </EditText>
+                <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="#054c71" android:text="@string/lb_password"></TextView>
+                <EditText android:layout_width="match_parent" android:id="@+id/editText2" android:layout_height="wrap_content" android:inputType="textPassword" android:layout_marginBottom="20dp"></EditText>
+                <LinearLayout android:id="@+id/linearLayout3" android:layout_gravity="center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp">
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bt_login" android:layout_marginRight="10dp" android:id="@+id/btn_login"></Button>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bt_listenasguest" android:id="@+id/btn_listenasguest"></Button>
+                </LinearLayout>
+                <Button android:id="@+id/btn_signupwithfb" android:layout_width="wrap_content" android:background="@drawable/bt_signupwithfb" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="45px" android:src="@drawable/recording_header_title" android:id="@+id/imageView1"></ImageView>
+        <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@+id/imagev_rainbow_effect" android:src="@drawable/recording_header_center" android:layout_width="wrap_content" android:layout_height="45px"></ImageView>
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="10dp" android:id="@+id/textv_sec" android:textColor="#DDF6FE" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:gravity="center_vertical" android:textSize="24dp" android:text="00:00"></TextView>
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="45px" android:src="@drawable/recording_header_bt_save" android:id="@+id/imagev_net_effect"></ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/imgv_rainbow_effect" 
+        	android:src="@drawable/audio_record_effect_layer3"></ImageView>
+        <ImageView android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/imagev_gray_effect" 
+        	android:src="@drawable/audio_record_effect_layer2"></ImageView>
+        <ImageView android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/imgv_net_effect" 
+        	android:src="@drawable/audio_record_effect_layer1"></ImageView>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/txv_debug" android:layout_height="wrap_content" android:text="txv_deubg"></TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <ImageButton android:layout_height="wrap_content" 
+        	android:id="@+id/bt_rec_start_stop" 
+        	android:background="@drawable/bt_record_enabled" 
+        	android:layout_width="wrap_content"></ImageButton>
+        <ImageButton android:layout_height="wrap_content" 
+        	android:id="@+id/bt_play_start_pause" 
+        	android:background="@drawable/bt_play_disabled" 
+        	android:layout_width="wrap_content"></ImageButton>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/audio_recording_bottom" >
+</ImageView>
+    
+</LinearLayout>

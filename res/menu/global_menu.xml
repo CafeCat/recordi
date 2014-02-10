@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/item_logout" android:title="@string/lb_logout" android:icon="@drawable/ic_logout"/> 
+   <item android:id="@+id/item_dashboard" android:title="@string/lb_dashboard"/>
+   <item android:id="@+id/item_addNewElooi" android:title="@string/lb_addNewElooi"></item>
+   <item android:id="@+id/item_myProfile" android:title="@string/lb_myProfile"></item>
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="horizontal" android:background="#f0f0f0">
+    <ImageView android:id="@+id/icon" android:layout_marginTop="4px" android:layout_marginLeft="4px" android:src="@drawable/icon" android:layout_width="wrap_content" android:layout_marginRight="10px" android:layout_height="wrap_content"></ImageView>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="19px" 
+            	android:text="@+id/label" 
+            	android:id="@+id/label" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content"
+            	android:textStyle="bold" 
+            	android:textColor="#4c4c4d"></TextView>
+            <TextView android:textSize="15px" android:textColor="#c16727"
+            	android:text="@+id/txv_echoed" 
+            	android:id="@+id/txv_echoed" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content"></TextView>
+            <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                <TextView android:textSize="16px" android:textColor="#4c4c4d"
+                	android:layout_height="wrap_content" 
+                	android:text="@+id/txt_tagClock" 
+                	android:layout_width="wrap_content" 
+                	android:id="@+id/txt_tagClock"></TextView>
+                <TextView android:textSize="16px" android:textColor="#4c4c4d"
+                	android:layout_height="wrap_content" 
+                	android:text="@+id/txt_tagLocation" 
+                	android:layout_width="wrap_content" 
+                	android:layout_toRightOf="@id/txt_tagClock" 
+                	android:id="@+id/txt_tagLocation"></TextView>
+                <TextView android:textSize="16px" android:textColor="#4c4c4d"
+                	android:layout_height="wrap_content" 
+                	android:text="@+id/txt_photo" 
+                	android:layout_width="wrap_content" 
+                	android:layout_toRightOf="@id/txt_tagLocation" 
+                	android:id="@+id/txt_tagPhoto"></TextView>
+            </RelativeLayout>
+            <TextView android:textColor="#4c4c4d" android:layout_width="wrap_content" android:textSize="16px" android:id="@+id/txv_tags" 
+            	android:text="@+id/txv_tags" android:layout_height="wrap_content"></TextView>
+            <TextView android:textColor="#4c4c4d" android:layout_width="wrap_content" android:textSize="16px" android:id="@+id/txt_tagMention" 
+            	android:text="@+id/txt_tagMention" android:layout_height="wrap_content"></TextView>
+            <TextView android:textColor="#4c4c4d" android:layout_width="wrap_content" android:textSize="16px" android:id="@+id/txt_tagEcho" 
+            	android:text="@+id/txt_tagEcho" android:layout_height="wrap_content"></TextView>
+            <TextView android:textColor="#4c4c4d" android:layout_width="wrap_content" android:textSize="16px" android:id="@+id/txt_tagMusicCredit" 
+            	android:text="@+id/txt_tagMusicCredit" android:layout_height="wrap_content"></TextView>
+            <TextView android:textColor="#4c4c4d" android:layout_width="wrap_content" android:textSize="16px" android:id="@+id/txt_tagReply" 
+            	android:text="@+id/txt_tagReply" android:layout_height="wrap_content"></TextView>
+            <TextView android:textSize="15px" 
+            	android:text="@+id/txv_timestamp" 
+            	android:id="@+id/txv_timestamp" 
+            	android:layout_width="wrap_content" 
+            	android:layout_height="wrap_content"
+            	android:textColor="#4fbedf"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
